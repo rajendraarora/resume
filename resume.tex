@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (28/Aug/2022)
+%
+% Original author:
+% Rajendra Arora (https://www.rajendraarora.com)
+%
+% Original repository:
+% https://github.com/rajendraarora
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rajendra}{Arora}{ \urlstyle{same}\href{https://rajendraarora.com/}{www.rajendraarora.com} | \href{https://github.com/rajendraarora16}{Github@rajendraarora16}\\
+\href{mailto:contact.rajarora@gmail.com}{contact.rajarora@gmail.com} | +66-640235539
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{RTU University}
+\descript{Bachelor of Technology \\Computer Science}
+\location{Dec 2016 | Kota, India}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/rajendraarora16}{\bf rajendraarora16} \\
+LinkedIn://  \href{https://www.linkedin.com/in/arorar16/}{\bf arorar16} \\
+Stackoverflow:// \href{https://stackoverflow.com/users/2802622/}{\bf rajendraarora16} \\
+Twitter://  \href{https://twitter.com/rajendraarora16}{\bf @rajendraarora16} \\
+Portfolio:// \href{https://rajendraarora.com/}{\bf rajendraarora.com} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Udemy}
+Data Structures \\
+React \\
+Golang \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\subsection{Udemy}
+Data Structures \\
+React \\
+Golang \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Language}
+Javascript \textbullet{} Node.js \textbullet{} TypeScript \textbullet{} React \textbullet{} Express \textbullet{} PHP \textbullet{} Core Golang \textbullet{} Core Java
+\sectionsep
+\subsection{Unit Testing}
+Jest \textbullet{}   Karma \textbullet{} JUnit test \textbullet{} Selenium \textbullet{} Puppeteer
+\sectionsep
+\subsection{CI/CD Pipeline Tools}
+Jenkins \textbullet{}   Bamboo
+\sectionsep
+\subsection{DATABASE}
+MySql \textbullet{} MongoDB
+\sectionsep
+\subsection{Markup language}
+HTML \textbullet{} HTML5 \textbullet{} CSS \textbullet{} CSS3 \textbullet{} XML
+\sectionsep
+\subsection{Framework}
+Next.js \textbullet{} Redux \textbullet{} GulpJS \textbullet{} Jquery \textbullet{} Style Components \textbullet{} PhantomJS
+\sectionsep
+\subsection{OTHER TOOLS}
+RabbitMQ \textbullet{} A/B testing \textbullet{} Git \textbullet{} Jira \textbullet{} Stash \textbullet{} Docker \textbullet{} Azure Kusto \textbullet{} KQL \textbullet{} Elasticsearch Kibana
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Taboola}
+\descript{| Software Engineer }
+\location{Sept 2021 – Aug 2022 | Bangkok, Thailand}
+\vspace{\topsep}
+\begin{tightemize}
+\item Creating product features on the recommendation platform using Node.js, Javascript, TypeScript, SASS, gulp and many more using modern technologies.
+\item Using scrum, agile methodology and working with product/business to deliver tasks on time with creative approach.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Taboola}
+\descript{| Senior Solution Engineer }
+\location{Apr 2019 – Aug 2021 | Bangkok, Thailand}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Focused on web development related tasks and going through debugging with complex challenges and solving problems with creative approach.
+\item Writing clean, sustainable code with karma/jasmine test and participate in peer code-reviews as well as helped solution engineers team via providing ease way of creating tools.
+\item Involved client facing to integrate Taboola for any complex issue arise within a limited time frame to save revenue.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BookMyShow}
+\descript{| Frontend Engineer }
+\location{May 2016 – Apr 2019 | Mumbai, India}
+\begin{tightemize}
+\item  Taking ownership of migrating the whole Bookmyshow website from PHP to React.js using mordern technologies with creative typography and microservices approach.
+\item Creating merchandise web app using modern react, next and creative technologies to build e-commerce website.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+% for bold text \textbf{QuickTongue}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Lighthouse Monitoring Tool}
+\descript{| NODE.js, RabbitMQ, Google spreadsheet API, Slack Bot}
+\location{Project URL: \href{https://docs.google.com/spreadsheets/d/19Llw6lcskNddOYLmSxFCEmwBGpJVy9MhkfBBJrurzXQ/edit?usp=sharing}{Lighthouse spreadsheet report}}
+A Lighthouse monitoring tool integrated with Google spreadsheet API to visualize graph for TBT, CLS, FCP, TTI, LCP, SI and performance at everyday in spreadsheet with average calculation with registered throttling internet speed and CPU.
+\sectionsep
+
+\runsubsection{Error tracking tool}
+\descript{| NODE.js, Azure Kusto, Slack/Email API}
+\location{Project URL: \href{https://tinyurl.com/error-tracking-tool}{https://tinyurl.com/error-tracking-tool}}
+An error tracking tool after Taboola is integrated with publisher website. We track the browser's error from user side and it sends us back for awareness.
+\sectionsep
+
+\runsubsection{WORDLE quiz GAME}
+\descript{| REACT, TYPESCRIPT, NODE.JS, VERCEL}
+\location{Project URL: \href{https://hindi-wordle.rajendraarora.com/}{hindi-wordle.rajendraarora.com}}
+A famous wordle quiz game was created in Hindi version and recognized by Internet.
+\sectionsep
+
+\runsubsection{XPATH SELECTOR EXTENSION}
+\descript{| JAVASCRIPT, HTML, CSS}
+\location{Project URL: \href{https://chrome.google.com/webstore/detail/taboola-xpath-selector/bnddcamoelhlmpjhdjgadogndfgfnjkb}{Chrome Webstore}}
+Came up with an initiative ideas a to make easier with just by drag/drop to get relevant information of xpath for register in crawler for scraping information.
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certificate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificate} 
+\runsubsection{Professional Scrum Master PSM - I}
+\\\location{March 4, 2017 | Mumbai, India}
+\location{\href{https://drive.google.com/file/d/1wctXxu6BOHmWd-s31s13dVtmfd7B-UIy/view?usp=sharing}{Certificate link}}
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
